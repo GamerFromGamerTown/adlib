@@ -1,0 +1,8 @@
+import random
+
+with open('words.txt', 'r') as file:
+    words = file.read().splitlines()
+
+adlib = f"I went to the {random.choice(words)} and bought a {random.choice(words)}"
+
+print(adlib)
